@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient( rgb(238, 3, 81),#383738,#130b0f);
+}
+.container{
+    background-color: #fff;
+    padding:40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0,2);
+    max-width: 400px;
+    width: 900px;
+    text-align: center;
+}
+h2{
+    font-family: 'Pacifico';
+    font-size: 2.8rem;
+    color: #c01255;
+   text-align: center; 
+    margin-bottom: 10px;
+}
+.subtitle{
+    font-size: 1.2rem;
+    color: brown;
+    margin-bottom: 30px;
+}
+ul{
+ list-style: none;
+ padding: 0;
+}
+ul li{
+    margin-bottom: 15px;
+}
+input[type="text"]:focus
+input[type="email"]:focus
+input[type="password"]:focus{
+    border-color:#e60073;
+    box box-shadow: 0 0 8px rgba(230,0,115,0,3);
+}
+.gender{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+.gender input{
+    margin-right: 5px;
+}
+.terms input{
+    margin-right: 5px;
+accent-color: #e60073;
+}
+button[type="sumbit"]:hover{ 
+width: 100%;
+padding: 12px;
+border-radius: 12px;
+border: none;
+background-color: #e60073;
+color: #fff;
+font-size: 1rem;
+cursor: pointer;
+transition: 0.3s;
+}
+
+button[type="submit"]:hover{ 
+background-color:#ff3399;
+}
+.logins-text {
+    margin-top: 15px;
+    text align:content;
+    font: size 0.8rem;
+}
+.logins-text a{
+    color:#e60073;
+    text-decoration: underline;
+
+}
+@media (max-width:500px){
+    .container{ 
+        padding: 30px 2opx;
+    }
+    h2{
+        font size:1.8rem;  
+}
+}
+
+
+
+
+
+
+
+
+

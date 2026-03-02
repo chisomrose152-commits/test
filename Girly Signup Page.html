@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)http://127.0.0.1:5500/resturant%20site/big%20resturant.html/signup%20page/signup.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="./Girly Signup Page_files/style.css">
+<title>Girly Signup Page</title></head>
+ 
+<body>
+    <div class="container">
+        <form class="signup box">
+            <h2> Create Account</h2>
+            <p class="subtitle"> Join us &amp; glow digitally </p>
+            <ul> 
+           <li><input type="text" placeholder="Full Name" requried=""></li>
+            <li><input type="email" placeholder="Email Address" requried=""></li>
+            <li><input type="password" placeholder="Password" requried=""></li>
+            <li><input type="password" placeholder="Confirm Password" requried=""></li>
+            </ul>
+   <div class="gender">
+    <label><input type="radio" name="gender"> Female</label>
+  <label><input type="radio" name="gender"> Male</label>
+    <label><input type="radio" name="gender"> Others </label>
+   </div>
+
+<label class="terms">
+    <input type="checkbox" requried=""> I agreed to the terms and condition
+</label>
+            <button type="submit"> Sign Up</button>
+            <p class="logins-text">
+                Already have an account?<a href="http://127.0.0.1:5500/resturant%20site/big%20resturant.html/signup%20page/signup.html#">Log in</a>
+            </p>
+        </form>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
